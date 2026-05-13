@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dry Run",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/wikisource_assistant.py",
+      "console": "integratedTerminal",
+      "args": [
+        "https://fr.wikisource.org/wiki/Page:Test_affichage.djvu/15",
+        "--dry-run",
+        "-v"
+      ]
+    },
+    {
+      "name": "Apply Changes",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/wikisource_assistant.py",
+      "console": "integratedTerminal",
+      "args": [
+        "https://fr.wikisource.org/wiki/Page:Test_affichage.djvu/17",
+        "--apply",
+        "--count", "1"
+      ]
+    },
+    {
+      "name": "GUI",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/wikisource_assistant_gui.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Build exe",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": [
+        "-File",
+        "${workspaceFolder}/build_windows_exe.ps1"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
