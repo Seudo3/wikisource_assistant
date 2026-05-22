@@ -70,8 +70,8 @@ STATUS_CANCELLED_BY_USER = 10
 DEFAULT_LANGUAGE = "en"
 SUPPORTED_LANGUAGES = ("en", "fr")
 DEFAULT_EDIT_SUMMARY_BY_LANG = {
-    "en": "AI-assisted transcription with [[Utilisateur:Seudo/WikisourceAI_v1|Wikisource AI Assistant]]",
-    "fr": "Transcription assistée avec [[Utilisateur:Seudo/WikisourceAI|Wikisource AI Assistant]]",
+    "en": "AI-assisted transcription with [[s:fr:Utilisateur:Seudo/Wikisource AI Assistant|Wikisource AI Assistant]]",
+    "fr": "Transcription assistée avec [[s:fr:Utilisateur:Seudo/Wikisource AI Assistant|Wikisource AI Assistant]]",
 }
 DEFAULT_EDIT_SUMMARY = DEFAULT_EDIT_SUMMARY_BY_LANG[DEFAULT_LANGUAGE]
 GUI_CONFIG_PATH = Path.home() / ".wikisource_assistant_gui.json"
